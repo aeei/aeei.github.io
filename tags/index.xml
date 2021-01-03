@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on poo.log</title>
-    <link>https://aeei.github.ioq/tags/</link>
+    <link>https://aeei.github.io/tags/</link>
     <description>Recent content in Tags on poo.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 03 Jan 2021 22:16:00 +0900</lastBuildDate><atom:link href="https://aeei.github.ioq/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Jan 2021 22:16:00 +0900</lastBuildDate><atom:link href="https://aeei.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>mysql</title>
-      <link>https://aeei.github.ioq/tags/mysql/</link>
+      <link>https://aeei.github.io/tags/mysql/</link>
       <pubDate>Sun, 03 Jan 2021 22:16:00 +0900</pubDate>
       
-      <guid>https://aeei.github.ioq/tags/mysql/</guid>
+      <guid>https://aeei.github.io/tags/mysql/</guid>
       <description></description>
     </item>
     
