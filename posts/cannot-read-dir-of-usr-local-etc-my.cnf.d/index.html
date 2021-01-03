@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <title>About - poo.log</title>
+    <title>mac에서 Can&#39;t read dir of &#39;/usr/local/etc/my.cnf.d&#39; 해결 - poo.log</title>
     
-    <meta name="description" content="💩.log">
+    <meta name="description" content="❯ mysql.server start my_print_defaults: Can&#39;t read dir of &#39;/usr/local/etc/my.cnf.d&#39; (OS errno 2 - No such file or directory) my_print_defaults: [ERROR] Fatal error in defaults handling. Program aborted! Starting MySQL .my_print_defaults: Can&#39;t read dir of &#39;/usr/local/etc/my.cnf.d&#39; (OS errno 2 - No such file or directory) my_print_defaults: [ERROR] Fatal error in defaults handling. Program aborted! my_print_defaults: Can&#39;t read dir of &#39;/usr/local/etc/my.cnf.d&#39; (OS errno 2 - No such file or directory) my_print_defaults: [ERROR] Fatal error in defaults handling.">
     <meta name="author" content="">
     
     <link href="https://aeei.github.ioq/an-old-hope.min.css" rel="stylesheet">
@@ -87,11 +87,29 @@
 
 <article class="post-single">
   <header class="post-header">
-    <h1 class="post-title">About</h1>
-    <div class="post-meta">October 8, 2020</div>
+    <h1 class="post-title">mac에서 Can&#39;t read dir of &#39;/usr/local/etc/my.cnf.d&#39; 해결</h1>
+    <div class="post-meta">January 3, 2021</div>
   </header>
-  <div class="post-content"><p>💩.log</p>
-</div>
+  <div class="post-content"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">❯ mysql.server start
+my_print_defaults: Can<span style="color:#e6db74">&#39;t read dir of &#39;</span>/usr/local/etc/my.cnf.d<span style="color:#e6db74">&#39; (OS errno 2 - No such file or directory)
+</span><span style="color:#e6db74">my_print_defaults: [ERROR] Fatal error in defaults handling. Program aborted!
+</span><span style="color:#e6db74">Starting MySQL
+</span><span style="color:#e6db74">.my_print_defaults: Can&#39;</span>t read dir of <span style="color:#e6db74">&#39;/usr/local/etc/my.cnf.d&#39;</span> <span style="color:#f92672">(</span>OS errno <span style="color:#ae81ff">2</span> - No such file or directory<span style="color:#f92672">)</span>
+my_print_defaults: <span style="color:#f92672">[</span>ERROR<span style="color:#f92672">]</span> Fatal error in defaults handling. Program aborted!
+my_print_defaults: Can<span style="color:#e6db74">&#39;t read dir of &#39;</span>/usr/local/etc/my.cnf.d<span style="color:#960050;background-color:#1e0010">&#39;</span> <span style="color:#f92672">(</span>OS errno <span style="color:#ae81ff">2</span> - No such file or directory<span style="color:#f92672">)</span>
+my_print_defaults: <span style="color:#f92672">[</span>ERROR<span style="color:#f92672">]</span> Fatal error in defaults handling. Program aborted!
+ ERROR! The server quit without updating PID file <span style="color:#f92672">(</span>/usr/local/var/mysql/Kellys-MacBook-Pro.local.pid<span style="color:#f92672">)</span>.
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">❯ mkdir /usr/local/etc/my.cnf.d
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">❯ mysql.server start           
+Starting MySQL
+.2021-01-03T13:10:35.6NZ mysqld_safe A mysqld process already exists
+ SUCCESS! 
+</code></pre></div></div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://aeei.github.ioq/tags/mysql">mysql</a></li>
+    </ul>
+  </footer>
   
 </article></main>
 <footer class="footer">

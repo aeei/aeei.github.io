@@ -3,20 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.aeei.io/about/</loc>
+    <loc>https://aeei.github.ioq/posts/cannot-read-dir-of-usr-local-etc-my.cnf.d/</loc>
+    <lastmod>2021-01-03T22:16:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aeei.github.ioq/tags/mysql/</loc>
+    <lastmod>2021-01-03T22:16:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aeei.github.ioq/</loc>
+    <lastmod>2021-01-03T22:16:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aeei.github.ioq/posts/</loc>
+    <lastmod>2021-01-03T22:16:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aeei.github.ioq/tags/</loc>
+    <lastmod>2021-01-03T22:16:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aeei.github.ioq/about/</loc>
     <lastmod>2020-10-08T16:16:27+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.aeei.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.aeei.io/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.aeei.io/tags/</loc>
+    <loc>https://aeei.github.ioq/categories/</loc>
   </url>
   
 </urlset>
