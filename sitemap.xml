@@ -3,19 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://aeei.io/about/</loc>
+    <loc>https://blog.aeei.io/about/</loc>
   </url>
   
   <url>
-    <loc>https://aeei.io/categories/</loc>
+    <loc>https://blog.aeei.io/categories/</loc>
   </url>
   
   <url>
-    <loc>https://aeei.io/tags/</loc>
+    <loc>https://blog.aeei.io/tags/</loc>
   </url>
   
   <url>
-    <loc>https://aeei.io/</loc>
+    <loc>https://blog.aeei.io/</loc>
   </url>
   
 </urlset>
