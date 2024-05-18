@@ -1,21 +1,21 @@
-import type { GatsbyConfig, PluginRef } from "gatsby"
-import "dotenv/config"
+import type { GatsbyConfig, PluginRef } from "gatsby";
+import "dotenv/config";
 
-const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
+const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
 const config: GatsbyConfig = {
   siteMetadata: {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-minimal-blog/gatsby-config.mjs
-    siteTitle: `Minimal Blog`,
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
-    siteHeadline: `Minimal Blog - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://minimal-blog.lekoarts.de`,
+    siteTitle: `🌱 자라나라 머리머리`,
+    siteTitleAlt: `자라나라 머리머리`,
+    siteHeadline: `자라든지 말든지`,
+    siteUrl: `https://aeei.io`,
     siteDescription: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.`,
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,
-    author: `@lekoarts_de`,
+    author: `@aeei`,
   },
   trailingSlash: `always`,
   plugins: [
@@ -28,20 +28,20 @@ const config: GatsbyConfig = {
             title: `Blog`,
             slug: `/blog`,
           },
-          {
-            title: `About`,
-            slug: `/about`,
-          },
+          // {
+          //   title: `About`,
+          //   slug: `/about`,
+          // },
         ],
         externalLinks: [
-          {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
-          },
-          {
-            name: `Homepage`,
-            url: `https://www.lekoarts.de?utm_source=minimal-blog&utm_medium=Starter`,
-          },
+          // {
+          //   name: `Twitter`,
+          //   url: `https://twitter.com/lekoarts_de`,
+          // },
+          // {
+          //   name: `Homepage`,
+          //   url: `https://www.lekoarts.de?utm_source=minimal-blog&utm_medium=Starter`,
+          // },
         ],
       },
     },
@@ -97,11 +97,14 @@ const config: GatsbyConfig = {
             serialize: ({
               query: { site, allPost },
             }: {
-              query: { allPost: IAllPost; site: { siteMetadata: ISiteMetadata } }
+              query: {
+                allPost: IAllPost;
+                site: { siteMetadata: ISiteMetadata };
+              };
             }) =>
               allPost.nodes.map((post) => {
-                const url = site.siteMetadata.siteUrl + post.slug
-                const content = `<p>${post.excerpt}</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="${url}">Keep reading</a>.</strong></div><br /> <br />`
+                const url = site.siteMetadata.siteUrl + post.slug;
+                const content = `<p>${post.excerpt}</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="${url}">Keep reading</a>.</strong></div><br /> <br />`;
 
                 return {
                   title: post.title,
@@ -110,7 +113,7 @@ const config: GatsbyConfig = {
                   url,
                   guid: url,
                   custom_elements: [{ "content:encoded": content }],
-                }
+                };
               }),
             query: `{
   allPost(sort: {date: DESC}) {
@@ -138,41 +141,41 @@ const config: GatsbyConfig = {
       },
     },
   ].filter(Boolean) as Array<PluginRef>,
-}
+};
 
-export default config
+export default config;
 
 interface IPostTag {
-  name: string
-  slug: string
+  name: string;
+  slug: string;
 }
 
 interface IPost {
-  slug: string
-  title: string
-  defer: boolean
-  date: string
-  excerpt: string
-  contentFilePath: string
-  html: string
-  timeToRead: number
-  wordCount: number
-  tags: Array<IPostTag>
-  banner: any
-  description: string
-  canonicalUrl: string
+  slug: string;
+  title: string;
+  defer: boolean;
+  date: string;
+  excerpt: string;
+  contentFilePath: string;
+  html: string;
+  timeToRead: number;
+  wordCount: number;
+  tags: Array<IPostTag>;
+  banner: any;
+  description: string;
+  canonicalUrl: string;
 }
 
 interface IAllPost {
-  nodes: Array<IPost>
+  nodes: Array<IPost>;
 }
 
 interface ISiteMetadata {
-  siteTitle: string
-  siteTitleAlt: string
-  siteHeadline: string
-  siteUrl: string
-  siteDescription: string
-  siteImage: string
-  author: string
+  siteTitle: string;
+  siteTitleAlt: string;
+  siteHeadline: string;
+  siteUrl: string;
+  siteDescription: string;
+  siteImage: string;
+  author: string;
 }
